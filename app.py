@@ -8,11 +8,8 @@ import random
 
 app = Flask(__name__)
 
-# ⚠️ ŞİFRELERİNİ BURAYA GİRMEYİ UNUTMA! ⚠️
-client = genai.Client(api_key="AIzaSyCCBGjHHIDSkT-bYGUr7UPZ5Fy9tKYSMY4")
-GOOGLE_MAPS_API_KEY = "AIzaSyAbJobY5-Ok0L1B0OykXDhmQ58dPVf_diw"
-client = genai.Client(api_key="AIzaSyCCBGjHHIDSkT-bYGUr7UPZ5Fy9tKYSMY4")
-GOOGLE_MAPS_API_KEY = "AIzaSyAbJobY5-Ok0L1B0OykXDhmQ58dPVf_diw"
+client = genai.Client(api_key="GEMINI-API")
+GOOGLE_MAPS_API_KEY = "MAPS-API"
 
 # WEB SCRAPER (CANLI FİYAT KAZIYICI)
 def canli_fiyat_cek(marka, sehir, url):
