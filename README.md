@@ -1,14 +1,7 @@
-# akilli-yakit-asistani
-## Projenin Amacı
-YakıtCüzdanı, bireysel sürücülerin ve KOBİ'lerin seyahatleri sırasındaki akaryakıt giderlerini optimize eden, yapay zeka destekli bir kişisel finans asistanıdır. Sadece yakıt fiyatlarını listelemekle kalmaz; hedef rotanız üzerindeki güncel istasyon fiyatlarını ve aracınızın yakıt tüketimini analiz ederek bütçeniz için **en kârlı alım noktasını** hesaplar.
+Projenin Amacı: Uzun yolculuklarda yapay zeka ile anlık yakıt optimizasyonu.
 
-## Agentik Yapay Zeka (Gemini API) Entegrasyonu
-Bu projenin karar mekanizması **Google Gemini API** kullanılarak agentik bir yapıda kurgulanmıştır. Sistem, web üzerinden çekilen anlık fiyat verilerini ve kullanıcı rotasını harmanlayarak bir "Finansal Ajan" gibi davranır:
-- Güzergah üzerindeki istasyonların fiyat farklarını hesaplar.
-- "X istasyonundan almak sana toplamda 45 TL tasarruf sağlar" gibi nokta atışı bütçe tavsiyeleri verir.
-- Kullanıcının aylık yakıt harcamalarını analiz ederek tasarruf içgörüleri sunar.
+Kullanılan Teknolojiler: Flutter, Python (Flask), Gemini 2.5 Flash, Google Maps Directions & Places API.
 
-## Kullanılan Teknolojiler
-* **Yapay Zeka:** Google Gemini 1.5 API (Akıl yürütme ve agentik karar motoru)
-* **Veri Toplama (Scraping):** Python (Güncel akaryakıt fiyatlarının anlık çekilmesi)
-* **Uygulama Mimarisi:** Flutter
+Öne Çıkan Özellikler: "Gemini Search Grounding ile gerçek zamanlı veri kazıma" ve o bahsettiğimiz "Fault Tolerance (Hata Tolere Etme)" algoritması.
+
+Gelecek Vizyonu: "Şu an web kazıma simülasyonu yapılmaktadır, production aşamasında doğrudan EPDK resmi API'lerine entegre edilecek şekilde ölçeklenebilir bir mimari kurulmuştur."
